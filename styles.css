@@ -1,0 +1,205 @@
+h1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: yellow;
+          border-radius: 40px;
+
+          font-family: "Archivo Black", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+
+          height: 50px;
+
+          margin: 20px 7px;
+}
+
+
+.sobre {
+          font-family: "Archivo Black", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+
+          text-align: center;
+
+          margin: 20px 0;
+}
+
+
+
+.grade-layout {
+          display: flex;
+
+          justify-content: space-between;
+          align-items: stretch;
+
+          padding: 20px;
+
+          max-width: 1500px;
+
+          margin: 0 auto;
+
+          gap: 40px;
+
+          animation: fadeIn 1s ease-in-out;
+}
+
+
+
+.bloco-igual {
+          flex: 1;
+
+          min-height: 320px;
+
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+          align-items: center;
+
+          padding: 20px;
+
+          border-radius: 20px;
+}
+
+
+
+.bloco-esquerdo {
+          border: 3px solid red;
+          color: white;
+          text-align: center;
+}
+
+.bloco-esquerdo h2 {
+          font-family: "Archivo Black", sans-serif;
+          color: white;
+          margin-top: 0;
+}
+
+.bloco-esquerdo p {
+          font-family: "Source Code Pro", monospace;
+
+          font-size: 16px;
+
+          line-height: 1.5;
+
+          text-align: justify;
+}
+
+
+
+.bloco-meio {
+          border: none;
+}
+
+
+
+.imagendopedro {
+          width: 100%;
+
+          max-width: 280px;
+
+          border-radius: 20px;
+
+          display: block;
+
+          transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+}
+
+
+.imagendopedro:hover {
+          transform: scale(1.05);
+
+          box-shadow:
+                    0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bloco-direito {
+          border: 3px solid #ffd900;
+          color: white;
+          text-align: center;
+}
+
+
+.bloco-direito h2 {
+          font-family: "Archivo Black", sans-serif;
+          color: white;
+          margin-top: 0;
+}
+
+
+
+.requisitos-img {
+          width: 100%;
+
+          max-width: 400px;
+
+          border-radius: 20px;
+
+          display: block;
+
+          transition:
+                    transform 0.3s ease,
+                    box-shadow 0.3s ease;
+}
+
+
+.requisitos-img:hover {
+          transform: scale(1.05);
+
+          box-shadow:
+                    0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes fadeIn {
+
+          from {
+                    opacity: 0;
+
+                    transform: translateY(-20px);
+          }
+
+          to {
+                    opacity: 1;
+
+                    transform: translateY(0);
+          }
+}
+
+
+
+@media (max-width: 900px) {
+
+          .grade-layout {
+                    flex-direction: column;
+
+                    align-items: center;
+          }
+
+
+          .bloco-igual {
+                    width: 90%;
+
+                    min-height: auto;
+          }
+
+
+          .imagendopedro {
+                    max-width: 280px;
+          }
+
+
+          .requisitos-img {
+                    max-width: 400px;
+          }
+
+}
+
+body { 
+          background-color: black;
+}
